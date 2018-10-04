@@ -1,62 +1,548 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 
-<head>
-	<title>Meowhead</title>
-	<link rel="stylesheet" type="text/css" href="reset.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
-</head>
+  <head>
 
-<body>
-	<h1>Random Cat GIF below</h1>
-	<button class="catButton" type="submit">surprise me</button>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-	<div id="gifs-appear-here"></div>
+    <title>Resume - Stella U</title>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript">
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-function displayGif () {
-	// $("#gifs-appear-here").empty();
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
 
-	var queryURL = "https://api.giphy.com/v1/gifs/search?q=cat&api_key=dc6zaTOxFJmzC&limit=10";
+    <!-- Custom styles for this template -->
+    <link href="css/resume.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" >
 
-		$.ajax({
-          url: queryURL,
-          method: "GET"
-        }).done(function(response) {
-          var results = response.data;
+  </head>
 
-          // for (var i = 0; i < results.length; i++) {
-          //   var gifDiv = $("<div class='item'>");
+  <body id="page-top">
 
-          //   // gifDiv.append(p);
-          //   // gifDiv.append(fruitImage);
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <span class="d-block d-lg-none">Stella U</span>
+        <span class="d-none d-lg-block">
+          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile_sq.jpg" alt="">
+        </span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#education">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-            $("#gifs-appear-here").prepend(results);
-          // }
-	    });
-	}
+    <div class="container-fluid p-0">
+
+      <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
+        <div class="my-auto">
+          <h1 class="mb-0">Stella
+            <span class="text-primary">U</span>
+          </h1>
+          <div class="subheading mb-5">San Francisco Bay Area · (224) 616-2180 ·
+            <a href="mailto:stellaulw@gmail.com">stellaulw@gmail.com</a>
+          </div>
+          <p class="lead mb-5">I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/stellaulw/">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://www.github.com/ulaiwa">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.facebook.com/ulaiwa">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="mailto:stellaulw@gmail.com">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <hr class="m-0">
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
+        <div class="my-auto">
+          <h2 class="mb-5">Experience</h2>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Freelance Web Developer</h3>
+              <div class="subheading mb-3">Upwork</div>
+              <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">March 2018 - Present</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Account Executive</h3>
+              <div class="subheading mb-3">Apex Maritime co.</div>
+              <p>Achieving sales and profit targets through market planning, direct sales calls, and development of business relationships with customers.</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">Apr 2015 - March 2018</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Math & Art Teacher</h3>
+              <div class="subheading mb-3">JEI Self-learning Systems, Inc.</div>
+              <p>Supervise and assist students, grade artwork, encourage creativity. </p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">Dec 2014 - Jul 2017</span>
+            </div>
+          </div>
+          <!-- <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Junior Web Designer</h3>
+              <div class="subheading mb-3">Shout! Media Productions</div>
+              <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
+
+              <p>Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration.</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">July 2010 - December 2011</span>
+            </div>
+          </div> -->
+
+          <!-- <div class="resume-item d-flex flex-column flex-md-row">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Web Design Intern</h3>
+              <div class="subheading mb-3">Shout! Media Productions</div>
+              <p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">September 2008 - June 2010</span>
+            </div>
+          </div> -->
+
+        </div>
+
+      </section>
+
+      <hr class="m-0">
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
+        <div class="my-auto">
+          <h2 class="mb-5">Education</h2>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">University of California, Berkeley Extension</h3>
+              <div class="subheading mb-3">Certification - Computer Programming</div>
+              <div>Full Stack Web Development</div>
+              <!-- <p>GPA: 3.23</p> -->
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">2017 - 2018</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">University of California, Santa Cruz</h3>
+              <div class="subheading mb-3">Bachelor of Arts - Design and Applied Arts</div>
+              <p>GPA: 3.56</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">2010 - 2014</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <hr class="m-0">
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
+        <div class="my-auto">
+          <h2 class="mb-5">Skills</h2>
+
+          <div class="subheading mb-3">Programming Languages &amp; Tools</div>
+          <ul class="list-inline dev-icons">
+            <li class="list-inline-item">
+              <i class="fab fa-html5"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="fab fa-css3-alt"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="fab fa-js-square"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="fab fa-angular"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="fab fa-react"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="fab fa-node-js"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="fab fa-sass"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="fab fa-less"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="fab fa-wordpress"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="fab fa-gulp"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="fab fa-grunt"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="fab fa-npm"></i>
+            </li>
+          </ul>
+
+          <div class="subheading mb-3">Workflow</div>
+          <ul class="fa-ul mb-0">
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Mobile-First, Responsive Design</li>
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Cross Browser Testing &amp; Debugging</li>
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Cross Functional Teams</li>
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Agile Development &amp; Scrum</li>
+          </ul>
+        </div>
+      </section>
+
+      <hr class="m-0">
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
+        <div class="my-auto">
+          <h2 class="mb-5">Interests</h2>
+          <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid snowboarder and novice skier. During the warmer months, I enjoy hiking, backpacking/camping in the wildness, and kayaking.</p>
+          <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies, I am an aspiring artist, and I spend a large amount of my free time exploring the latest technology advancements in the front-end web development world.</p>
+          <!-- <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring artist, and I spend a large amount of my free time exploring the latest technology advancements in the front-end web development world.</p> -->
+        </div>
+      </section>
+
+      <hr class="m-0">
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="projects">
+        <div class="my-auto">
+          <h2 class="mb-5">Projects</h2>
+          <!--responsive grid here!-->
+          <div class="grid_container">
+            <div class="grid_one">
+              <div class="post_pic portfolio_post_pic">
+                <a href="https://fittrain.herokuapp.com/" class="w_hover img-link img-wrap">
+                  <span class="overlay"></span>
+                  <span class="link-icon"></span>
+                  <img class="wp-post-image" width="300" height="auto" alt="fitTrain" src="img/projects/fitTrain.jpg">
+                </a>
+              </div>
+              <h4 class="post_title"><a href="https://fittrain.herokuapp.com/">FitTrain</a></h4>
+              <h5 class="post_subtitle"></h5>
+              </div>
+
+              <div class="grid_two">
+                <div class="post_pic portfolio_post_pic">
+                <a href="https://fittrain.herokuapp.com/" class="w_hover img-link img-wrap">
+                  <span class="overlay"></span>
+                  <span class="link-icon"></span>
+                  <img class="wp-post-image" width="300" height="auto" alt="fitTrain" src="img/projects/fitTrain.jpg">
+                </a>
+              </div>
+              <h4 class="post_title"><a href="https://fittrain.herokuapp.com/">FitTrain</a></h4>
+              <h5 class="post_subtitle"></h5>
+              </div>
+
+              <!-- <div class="grid_three">
+              <ul>
+                <li>The Flight</li>
+                <li>The City</li>
+                <li>The Island</li>
+                <li>The Food</li>
+              </ul>
+              </div>
+
+              <div class="grid_four">
+              <ul>
+                <li>The Flight</li>
+                <li>The City</li>
+                <li>The Island</li>
+                <li>The Food</li>
+              </ul>
+              </div>
+
+              <div class="grid_five">
+              <h1>The City</h1>
+              <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>
+              <p>Resize the browser window to see how the content respond to the resizing.</p>
+              </div> -->
+            </div>
+          <!--responsive grid end!-->
+
+          <!-- <ul class="fa-ul mb-0">
+            <li>
+              <i class="fa-li fa fa-trophy text-warning"></i>
+              Google Analytics Certified Developer</li>
+            <li>
+              <i class="fa-li fa fa-trophy text-warning"></i>
+              Mobile Web Specialist - Google Certification</li>
+            <li>
+              <i class="fa-li fa fa-trophy text-warning"></i>
+              1<sup>st</sup>
+              Place - University of Colorado Boulder - Emerging Tech Competition 2009</li>
+            <li>
+              <i class="fa-li fa fa-trophy text-warning"></i>
+              1<sup>st</sup>
+              Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)</li>
+            <li>
+              <i class="fa-li fa fa-trophy text-warning"></i>
+              2<sup>nd</sup>
+              Place - University of Colorado Boulder - Emerging Tech Competition 2008</li>
+            <li>
+              <i class="fa-li fa fa-trophy text-warning"></i>
+              1<sup>st</sup>
+              Place - James Buchanan High School - Hackathon 2006</li>
+            <li>
+              <i class="fa-li fa fa-trophy text-warning"></i>
+              3<sup>rd</sup>
+              Place - James Buchanan High School - Hackathon 2005</li>
+          </ul> -->
 
 
-	$(document).on("click", ".catButton", displayGif);
+          				<!-- <div class="section_header portfolio_section_header">
+          					<h2 class="section_title portfolio_section_title current"><a href="#"><span class="icon icon-briefcase"></span><span class="section_name">Portfolio</span></a><span class="section_icon"></span></h2>
+          				</div> -->
+          		<!-- <div class="section_body portfolio_section_body" style="display: block;">
+          				 <div class="portfolio_wrapper"> -->
+                    			<!-- <ul id="portfolio_iso_filters">
+						                   <li><a href="#" data-filter="*" class="current">All</a></li>
+													</ul> -->
+          							<!-- <script>
+                        var ppp = 9;
+          							</script> -->
 
-	$("#gifs-appear-here").on("click", ".gif", function() {
-		console.log("state changed")
-      var state = $(this).attr("data-state");
-      if (state === "still") {
-        $(this).attr("src", $(this).data("animate"));
+                        <!-- <div class="grid-container">
+                          <div>
+                            <div class="post_pic portfolio_post_pic">
+                              <a href="https://fittrain.herokuapp.com/" class="w_hover img-link img-wrap">
+                                <span class="overlay"></span>
+                                <span class="link-icon"></span>
+                                <img class="wp-post-image" width="300" height="auto" alt="fitTrain" src="img/projects/fitTrain.jpg">
+                              </a>
+                            </div>
+                            <h4 class="post_title"><a href="https://fittrain.herokuapp.com/">FitTrain</a></h4>
+                            <h5 class="post_subtitle"></h5>
+                          </div>
 
-        $(this).attr("data-state", "animate");
-      } else {
-        $(this).attr("src", $(this).data("still"));
+                          <div>
+                              <div class="post_pic portfolio_post_pic">
+                              <a href="https://fittrain.herokuapp.com/" class="w_hover img-link img-wrap">
+                                <span class="overlay"></span>
+                                <span class="link-icon"></span>
+                                <img class="wp-post-image" width="300" height="auto" alt="fitTrain" src="img/projects/fitTrain.jpg">
+                              </a>
+                            </div>
+                            <h4 class="post_title"><a href="https://fittrain.herokuapp.com/">FitTrain</a></h4>
+                            <h5 class="post_subtitle"></h5>
+                          </div>
 
-        $(this).attr("data-state", "still");
-      }
-    });
+                          <div>
+                            <div class="post_pic portfolio_post_pic">
+                            <a href="https://fittrain.herokuapp.com/" class="w_hover img-link img-wrap">
+                              <span class="overlay"></span>
+                              <span class="link-icon"></span>
+                              <img class="wp-post-image" width="300" height="auto" alt="fitTrain" src="img/projects/fitTrain.jpg">
+                            </a>
+                            </div>
+                            <h4 class="post_title"><a href="https://fittrain.herokuapp.com/">FitTrain</a></h4>
+                            <h5 class="post_subtitle"></h5>
+                          </div> -->
+                          <!-- <div>4</div>
+                          <div>5</div>
+                          <div>6</div>
+                          <div>7</div>
+                          <div>8</div> -->
+                        <!-- </div> -->
 
-  </script>
 
-</body>
+          	      <!-- <div class="portfolio_items isotope" style="position: relative; overflow: hidden; height: 528px;">
+
+          						<article class="post portfolio_post portfolio_post_1 first even  isotope-item" style="z-index: 998; position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px);">
+          							<div class="post_pic portfolio_post_pic">
+          								<a href="https://fittrain.herokuapp.com/" class="w_hover img-link img-wrap">
+          									<span class="overlay"></span>
+          									<span class="link-icon"></span>
+          									<img class="wp-post-image" width="300" height="auto" alt="fittrain" src="img/projects/fitrain.jpg">
+          								</a>
+          							</div>
+          							<h4 class="post_title"><a href="https://fittrain.herokuapp.com/">FitTrain</a></h4>
+          							<h5 class="post_subtitle"></h5>
+          						</article>
+
+                      <br>
+
+          						<article class="post portfolio_post portfolio_post_2 odd  isotope-item" style="z-index: 997; position: absolute; left: 0px; top: 0px; transform: translate3d(254px, 0px, 0px);">
+                        <div class="post_pic portfolio_post_pic">
+          								<a href="https://fittrain.herokuapp.com/" class="w_hover img-link img-wrap">
+          									<span class="overlay"></span>
+          									<span class="link-icon"></span>
+          									<img class="wp-post-image" width="300" height="auto" alt="fittrain" src="img/projects/fitrain.jpg">
+          								</a>
+          							</div>
+          							<h4 class="post_title"><a href="https://fittrain.herokuapp.com/">FitTrain</a></h4>
+          							<h5 class="post_subtitle"></h5>
+          						</article>
+
+          						<article class="post portfolio_post portfolio_post_3 even  isotope-item" style="z-index: 996; position: absolute; left: 0px; top: 0px; transform: translate3d(508px, 0px, 0px);">
+                        <div class="post_pic portfolio_post_pic">
+          								<a href="https://fittrain.herokuapp.com/" class="w_hover img-link img-wrap">
+          									<span class="overlay"></span>
+          									<span class="link-icon"></span>
+          									<img class="wp-post-image" width="300" height="auto" alt="fittrain" src="img/projects/fitrain.jpg">
+          								</a>
+          							</div>
+          							<h4 class="post_title"><a href="https://fittrain.herokuapp.com/">FitTrain</a></h4>
+          							<h5 class="post_subtitle"></h5>
+          						</article> -->
+
+          						<!-- <article class="post portfolio_post portfolio_post_4 odd  isotope-item" style="z-index: 995; position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 176px, 0px);">
+                        <div class="post_pic portfolio_post_pic">
+                          <a href="https://fittrain.herokuapp.com/" class="w_hover img-link img-wrap">
+                            <span class="overlay"></span>
+                            <span class="link-icon"></span>
+                            <img class="wp-post-image" width="252" height="174" alt="fittrain" src="img/projects/fitrain.jpg">
+                          </a>
+                        </div>
+                        <h4 class="post_title"><a href="https://fittrain.herokuapp.com/">FitTrain</a></h4>
+                        <h5 class="post_subtitle"></h5>
+          						</article>
+
+          						<article class="post portfolio_post portfolio_post_5 even  isotope-item" style="z-index: 994; position: absolute; left: 0px; top: 0px; transform: translate3d(254px, 176px, 0px);">
+                        <div class="post_pic portfolio_post_pic">
+          								<a href="https://fittrain.herokuapp.com/" class="w_hover img-link img-wrap">
+          									<span class="overlay"></span>
+          									<span class="link-icon"></span>
+          									<img class="wp-post-image" width="252" height="174" alt="fittrain" src="img/projects/fitrain.jpg">
+          								</a>
+          							</div>
+          							<h4 class="post_title"><a href="https://fittrain.herokuapp.com/">FitTrain</a></h4>
+          							<h5 class="post_subtitle"></h5>
+          						</article>
+
+          						<article class="post portfolio_post portfolio_post_6 odd  isotope-item" style="z-index: 993; position: absolute; left: 0px; top: 0px; transform: translate3d(508px, 176px, 0px);">
+                        <div class="post_pic portfolio_post_pic">
+          								<a href="https://fittrain.herokuapp.com/" class="w_hover img-link img-wrap">
+          									<span class="overlay"></span>
+          									<span class="link-icon"></span>
+          									<img class="wp-post-image" width="auto" height="174" alt="fittrain" src="img/projects/fitrain.jpg">
+          								</a>
+          							</div>
+          							<h4 class="post_title"><a href="https://fittrain.herokuapp.com/">FitTrain</a></h4>
+          							<h5 class="post_subtitle"></h5>
+          						</article>
+
+          						<article class="post portfolio_post portfolio_post_7 even  isotope-item" style="z-index: 992; position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 352px, 0px);">
+                        <div class="post_pic portfolio_post_pic">
+          								<a href="https://fittrain.herokuapp.com/" class="w_hover img-link img-wrap">
+          									<span class="overlay"></span>
+          									<span class="link-icon"></span>
+          									<img class="wp-post-image" width="252" height="174" alt="fittrain" src="img/projects/fitrain.jpg">
+          								</a>
+          							</div>
+          							<h4 class="post_title"><a href="https://fittrain.herokuapp.com/">FitTrain</a></h4>
+          							<h5 class="post_subtitle"></h5>
+          						</article>
+
+          						<article class="post portfolio_post portfolio_post_8 odd  isotope-item" style="z-index: 991; position: absolute; left: 0px; top: 0px; transform: translate3d(254px, 352px, 0px);">
+                        <div class="post_pic portfolio_post_pic">
+          								<a href="https://fittrain.herokuapp.com/" class="w_hover img-link img-wrap">
+          									<span class="overlay"></span>
+          									<span class="link-icon"></span>
+          									<img class="wp-post-image" width="252" height="174" alt="fittrain" src="img/projects/fitrain.jpg">
+          								</a>
+          							</div>
+          							<h4 class="post_title"><a href="https://fittrain.herokuapp.com/">FitTrain</a></h4>
+          							<h5 class="post_subtitle"></h5>
+          						</article>
+
+          						<article class="post portfolio_post portfolio_post_9 even  isotope-item" style="z-index: 990; position: absolute; left: 0px; top: 0px; transform: translate3d(508px, 352px, 0px);">
+                        <div class="post_pic portfolio_post_pic">
+                          <a href="https://fittrain.herokuapp.com/" class="w_hover img-link img-wrap">
+                            <span class="overlay"></span>
+                            <span class="link-icon"></span>
+                            <img class="wp-post-image" width="252" height="174" alt="fittrain" src="img/projects/fitrain.jpg">
+                          </a>
+                        </div>
+                        <h4 class="post_title"><a href="https://fittrain.herokuapp.com/">FitTrain</a></h4>
+                        <h5 class="post_subtitle"></h5>
+          						</article> -->
+          					</div>
+          						<div class="portfolio_iso_pages" style="display: none;">
+          							<ul id="portfolio_iso_pages">
+          							</ul>
+          							<div id="portfolio_iso_pages_2">
+          								Page <span id="portfolio_iso_pages_current">1</span> of <span id="portfolio_iso_pages_total"></span>
+          							</div>
+          						</div>
+                    </div>
+          				</div>
+
+        </div>
+      </section>
+
+    </div>
+
+    <p align="center">StellaU.com © 2018 All Rights Reserved</p>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/resume.min.js"></script>
+
+  </body>
 
 </html>

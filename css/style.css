@@ -1,0 +1,54 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+  background-color: white;
+  padding: 10px;
+}
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid black;
+  text-align: center;
+  font-size: 30px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* a {
+  display: inline-block;
+} */
+
+
+.grid_one {
+	width: 33%;
+    float: left;
+    padding: 15px;
+    border: 1px solid red;
+}
+.grid_two {
+    width: 33%;
+    float: left;
+    padding: 15px;
+    border: 1px solid orange;
+}
+/* .grid_three {
+    width: 33%;
+    float: left;
+    padding: 15px;
+    border: 1px solid yellow;
+}
+
+.four {
+    width: 33%;
+    float: left;
+    padding: 15px;
+    border: 1px solid green;
+}
+.five {
+    width: 33%;
+    float: left;
+    padding: 15px;
+    border: 1px solid blue;
+} */
