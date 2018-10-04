@@ -6,14 +6,56 @@
 	<link rel="stylesheet" type="text/css" href="reset.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
-	
+
 <body>
-	<h1>Hello  Meowhead world!</h1>
+	<h1>Random Cat GIF below</h1>
+	<button class="catButton" type="submit">surprise me</button>
 
-	<div class="nav"> 
-	<img src="https://pbs.twimg.com/media/DGdYr03XcAApZ0r.jpg"> here is a daily cat pic for ya! 
+	<div id="gifs-appear-here"></div>
 
-	</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+
+function displayGif () {
+	// $("#gifs-appear-here").empty();
+
+	var queryURL = "https://api.giphy.com/v1/gifs/search?q=cat&api_key=dc6zaTOxFJmzC&limit=10";
+
+		$.ajax({
+          url: queryURL,
+          method: "GET"
+        }).done(function(response) {
+          var results = response.data;
+
+          // for (var i = 0; i < results.length; i++) {
+          //   var gifDiv = $("<div class='item'>");
+
+          //   // gifDiv.append(p);
+          //   // gifDiv.append(fruitImage);
+
+            $("#gifs-appear-here").prepend(results);
+          // }
+	    });
+	}
+
+
+	$(document).on("click", ".catButton", displayGif);
+
+	$("#gifs-appear-here").on("click", ".gif", function() {
+		console.log("state changed")
+      var state = $(this).attr("data-state");
+      if (state === "still") {
+        $(this).attr("src", $(this).data("animate"));
+
+        $(this).attr("data-state", "animate");
+      } else {
+        $(this).attr("src", $(this).data("still"));
+
+        $(this).attr("data-state", "still");
+      }
+    });
+
+  </script>
 
 </body>
 
